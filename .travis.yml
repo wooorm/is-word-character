@@ -1,11 +1,8 @@
 language: node_js
 node_js:
-- '0.11'
-- '0.12'
 - '4.0'
-- '5.0'
-- '6.0'
-after_success: bash <(curl -s https://codecov.io/bash)
+- '7.0'
+after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
@@ -13,7 +10,7 @@ deploy:
       secure: gVzTMC6iGWVPrYfGmhrasvT3VjZB4VTY4VILiwLZzF/fsA6oU1j6zYneIZPK2+c5UWyNlEXzlVawwXKzLPJr2rQ8elqIHJc621elSbVkqXHl38kQzm5UqFBJlziSnc1VuTN4bjLcLJdK3xIS29pfqBexI5arfj2bnJM01mmXh+vmwuv2KILAr3rGmIJQP4sRtmZ1M6A3bjKmcsJZ9zgMDdc2QZHPIC6uHHECcLf5/NeJbbjXsHVzvEj4+KBziEZdc033OdfT1tainTD39AIQHyeoTk0kgDo49lfEsyOoC4CsW1gC2PdrciqcnvM28UKv0tzSKxByASqUvCfXSQCUJ+V8S88ee9N9pIzsNPrt33rjMlnZHqjp6t+vhS8Wk5fniMZjKWVHc63Pg1WL9EP610vDR49pWF5xzFsaV/l1xRg1NuoqMxYM+vToycUv52IWqrhVsVbRgQIsvIhHePPxAVhLNulTWaI7g83SzutGJDuhgbjk/pozdjfLRY8ZmiO4bneGOTGuLl2/BTitbmVL6kCr6VAK4Gmuu5RReEuw4SyrA/utFx/Z+0KBvGWZYPyyAWlTbpJUEoyJDFkPB7Y0VFLjhzCPi6QhlsdfYp/8R4PhX2Z3qCJ5hby0KS/bIDXcxHkQ1iQXsKL3UJMi47POZNkDXOe/TKfE9qVZQEAPO7k=
     on:
       tags: true
-      node: '5.0'
+      node: '4.0'
   - provider: releases
     api_key:
       secure: arEt3MDEV9hoJeMic8N/ahrK5gK5cta1JzjVb1Wv73XGoojPLNBT5aYPCm0tHts/uwEopc5ZcC5rVBqzWw7s3a5Y4H89uCwwUkbXWKTj5mwB1dh8xBIrKA2kSkvDNfdEcFNzUkLnAGfdoIvwswuWvsKWnBD8VeRrgDWXTdELSCmhjTb4mQ/qyoyruRo1VYst2z4LI1HyvZ3NA0kyhtT2A7qivmFCdt/TPY9tX6H7ShvvC+nbt/c++7gXN0w1MJ8+Afsdx9KbQcchGHuGTSaFSO/UiEeUNv8JAXcPkCU6xGJFoX2//NidcqvFUdVJu20Cjm9relABYz9gPqCo3k60DXNO37hQ0KySNIMOrFdO0n1wxDbDd3dBe/k42Hslcc4rBQx4c4EeEhf4ikrlzUIv7Pa3LSOxvWyY0C8tT6XDQgopZdtUyNrS7GSWCOENldD1WW4hTEkdfsTpZuHw6xxQsHRC2ZCLnCrd9PLULJZ2/EwSSqVaaU93OEJnAFSyHyMU0xesyYYM91R3rWZYuuG9drkAx0C3thpuZmqfAFey76EZJH7Zc1lQcYE/fDXf46zqKu4LifWptbYiFZogp+S8PROpKQbGy4vhkNuh6rJe+WE22j7dllxkGBavZKmWpMXdhk0nuboPV29CYccAyqPMrJtyBqJNSF31JVfY7tJXV7k=
@@ -22,4 +19,4 @@ deploy:
       - "is-word-character.min.js"
     on:
       tags: true
-      node: '6.0'
+      node: '7.0'
