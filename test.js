@@ -1,20 +1,8 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module is-word-character
- * @fileoverview Test suite for `is-word-character`.
- */
-
 'use strict';
 
-/* eslint-env node */
-
-/* Dependencies. */
 var test = require('tape');
 var wordCharacter = require('./');
 
-/* Tests. */
 test('wordCharacter(character)', function (t) {
   t.ok(wordCharacter('a'));
   t.ok(wordCharacter('z'));
