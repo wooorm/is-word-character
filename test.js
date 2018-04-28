@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var wordCharacter = require('./');
+var wordCharacter = require('.');
 
 test('wordCharacter(character)', function (t) {
   t.ok(wordCharacter('a'));
