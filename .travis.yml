@@ -4,19 +4,12 @@ node_js:
 - '8.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: gVzTMC6iGWVPrYfGmhrasvT3VjZB4VTY4VILiwLZzF/fsA6oU1j6zYneIZPK2+c5UWyNlEXzlVawwXKzLPJr2rQ8elqIHJc621elSbVkqXHl38kQzm5UqFBJlziSnc1VuTN4bjLcLJdK3xIS29pfqBexI5arfj2bnJM01mmXh+vmwuv2KILAr3rGmIJQP4sRtmZ1M6A3bjKmcsJZ9zgMDdc2QZHPIC6uHHECcLf5/NeJbbjXsHVzvEj4+KBziEZdc033OdfT1tainTD39AIQHyeoTk0kgDo49lfEsyOoC4CsW1gC2PdrciqcnvM28UKv0tzSKxByASqUvCfXSQCUJ+V8S88ee9N9pIzsNPrt33rjMlnZHqjp6t+vhS8Wk5fniMZjKWVHc63Pg1WL9EP610vDR49pWF5xzFsaV/l1xRg1NuoqMxYM+vToycUv52IWqrhVsVbRgQIsvIhHePPxAVhLNulTWaI7g83SzutGJDuhgbjk/pozdjfLRY8ZmiO4bneGOTGuLl2/BTitbmVL6kCr6VAK4Gmuu5RReEuw4SyrA/utFx/Z+0KBvGWZYPyyAWlTbpJUEoyJDFkPB7Y0VFLjhzCPi6QhlsdfYp/8R4PhX2Z3qCJ5hby0KS/bIDXcxHkQ1iQXsKL3UJMi47POZNkDXOe/TKfE9qVZQEAPO7k=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    api_key:
-      secure: b1hk+vCbXcLJHPPyuV1HMG62H+Fdi300MSb1xFQ9RtAOz378mweeB8mgPcVNTN7lwTyTg1fW1rUadr/X6cMSK5yZdTxdxsZhQS//6zP6RsR56n2wH7LPEVQZFYf6cOoGLrg2fo+2peP9qlHrzGtAHNTlAP8Ts38+M5/J9aVXvphXwOkzaIJqK+N0q/29wsPxr4nZfHzwDyyDan6or/kDd0Y+ZJQ3cez6iOkI5ZYiG0VnivX1ccQF2+79hBgCZrlSr6bZAJ4/git3l5W1bnumEZaQZcJfN38p7N7ftqrma8OTH5yXrHMSZXbZAUwlQzxXnuFztIXd39va1J+95+5fqLDw8FbLmYMT8WwT84XzYUCmX7/hRV0CFmnRVpuH1Y51Zt3mrljdOCbrCAxlH7nWXI2627CnBwWDmYxuhm6DU7y/dsg2N9iQHW/q8ipDgRj2DweAZ3xIPsGceuBuAb851SaKE8d+bFbrpfJHKt8+08tQlbxiT2hxWKVbnfDdqpgjq0QaannFcR+qeQT+hM+Wuhayx4J/T9Lpnc6c0tYeMU8F45LtvJA2pittaBHCFRS6YagTs+Z+5IVloDmFpslpLcK+x/iltvk0xVhoyxsi1zwM0lxVA3VLLxrQl5HmmXf/Xfq6nuSzkAmVp5ZSELzP/tBooDuyiKLN4ywqD2U/0n8=
-    file:
-      - "is-word-character.js"
-      - "is-word-character.min.js"
-    on:
-      tags: true
-      node: '8.0'
+  provider: releases
+  api_key:
+    secure: b1hk+vCbXcLJHPPyuV1HMG62H+Fdi300MSb1xFQ9RtAOz378mweeB8mgPcVNTN7lwTyTg1fW1rUadr/X6cMSK5yZdTxdxsZhQS//6zP6RsR56n2wH7LPEVQZFYf6cOoGLrg2fo+2peP9qlHrzGtAHNTlAP8Ts38+M5/J9aVXvphXwOkzaIJqK+N0q/29wsPxr4nZfHzwDyyDan6or/kDd0Y+ZJQ3cez6iOkI5ZYiG0VnivX1ccQF2+79hBgCZrlSr6bZAJ4/git3l5W1bnumEZaQZcJfN38p7N7ftqrma8OTH5yXrHMSZXbZAUwlQzxXnuFztIXd39va1J+95+5fqLDw8FbLmYMT8WwT84XzYUCmX7/hRV0CFmnRVpuH1Y51Zt3mrljdOCbrCAxlH7nWXI2627CnBwWDmYxuhm6DU7y/dsg2N9iQHW/q8ipDgRj2DweAZ3xIPsGceuBuAb851SaKE8d+bFbrpfJHKt8+08tQlbxiT2hxWKVbnfDdqpgjq0QaannFcR+qeQT+hM+Wuhayx4J/T9Lpnc6c0tYeMU8F45LtvJA2pittaBHCFRS6YagTs+Z+5IVloDmFpslpLcK+x/iltvk0xVhoyxsi1zwM0lxVA3VLLxrQl5HmmXf/Xfq6nuSzkAmVp5ZSELzP/tBooDuyiKLN4ywqD2U/0n8=
+  file:
+    - "is-word-character.js"
+    - "is-word-character.min.js"
+  on:
+    tags: true
+    node: '8.0'
