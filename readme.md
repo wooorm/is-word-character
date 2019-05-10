@@ -57,4 +57,4 @@ code at the first position (`string`), is a word character.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
