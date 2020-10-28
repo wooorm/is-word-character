@@ -3,7 +3,7 @@
 var test = require('tape')
 var wordCharacter = require('.')
 
-test('wordCharacter(character)', function(t) {
+test('wordCharacter(character)', function (t) {
   t.ok(wordCharacter('a'))
   t.ok(wordCharacter('z'))
   t.ok(wordCharacter('A'))
