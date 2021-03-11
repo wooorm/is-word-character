@@ -49,9 +49,9 @@ first position (`string`), is a word character.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-word-character.svg
+[build-badge]: https://github.com/wooorm/is-word-character/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-word-character
+[build]: https://github.com/wooorm/is-word-character/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-word-character.svg
 
