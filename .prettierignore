@@ -1,5 +1,2 @@
 coverage/
-is-word-character.js
-is-word-character.min.js
-*.json
 *.md

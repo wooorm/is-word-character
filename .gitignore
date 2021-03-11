@@ -1,8 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
 coverage/
 node_modules/
-is-word-character.js
-is-word-character.min.js
 yarn.lock

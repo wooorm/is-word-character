@@ -9,6 +9,9 @@ Check if a character is a word character (`\w`, which equals `[a-zA-Z0-9_]`).
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,19 +21,22 @@ npm install is-word-character
 ## Use
 
 ```js
-var wordCharacter = require('is-word-character')
+import {isWordCharacter} from 'is-word-character'
 
-wordCharacter('a') // => true
-wordCharacter('Z') // => true
-wordCharacter('0') // => true
-wordCharacter('_') // => true
-wordCharacter(' ') // => false
-wordCharacter('💩') // => false
+isWordCharacter('a') // => true
+isWordCharacter('Z') // => true
+isWordCharacter('0') // => true
+isWordCharacter('_') // => true
+isWordCharacter(' ') // => false
+isWordCharacter('💩') // => false
 ```
 
 ## API
 
-### `wordCharacter(character|code)`
+This package exports the following identifiers: `isWordCharacter`.
+There is no default export.
+
+### `isWordCharacter(character|code)`
 
 Check whether the given character code (`number`), or the character code at the
 first position (`string`), is a word character.
