@@ -8,7 +8,7 @@
 export function isWordCharacter(character) {
   return /\w/.test(
     typeof character === 'number'
-      ? String.fromCharCode(character)
+      ? String.fromCodePoint(character)
       : character.charAt(0)
   )
 }
